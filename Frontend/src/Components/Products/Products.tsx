@@ -96,7 +96,7 @@ const ScrollableContainer = {
 	width: '100%',
 	background: 'aliceblue',
 	marginBottom: '25px',
-  padding: '8px',
+  padding: '8px 20px',
   boxSizing: 'border-box',
   borderRadius: '8px'
 };
