@@ -6,7 +6,7 @@ import Profile from './Profile'
 const Header = () => {
   return (
     <Stack direction={'row'} justifyContent={'space-between'} alignContent={'center'} >
-      <Typography>Shoppingo</Typography>
+      <Typography variant='h4' color='#645151' fontWeight={'bold'}>Shoppingo</Typography>
       <Search />
       <Profile />
     </Stack>

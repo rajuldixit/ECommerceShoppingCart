@@ -1,21 +1,21 @@
 import { Card, CardMedia, CardContent, Typography, CardActions, Button } from '@mui/material'
-import logo from '../../logo.svg'
+import logo from '../../assets/images/iphoneCover.png'
 import React from 'react'
 
 const ProductCard = () => {
   return (
     <Card sx={CardStyle}>
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height: 160, objectFit: 'cover' }}
         image={logo}
         title="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Iphone
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          250 INR
+          250K INR
         </Typography>
       </CardContent>
     </Card>

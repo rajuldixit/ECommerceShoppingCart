@@ -49,8 +49,10 @@ const Filter = () => {
     <Stack spacing={1}>
       <Card sx={CardStyle}>
         <CardContent>
+          <Stack flexDirection={'row'} justifyContent={'space-between'} alignItems={'center'}>
           <Typography>Min</Typography>
           <Typography>Max</Typography>
+          </Stack>
           <PrettoSlider
             valueLabelDisplay="auto"
             aria-label="pretto slider"

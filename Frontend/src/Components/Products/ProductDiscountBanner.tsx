@@ -1,19 +1,24 @@
-import { Stack } from '@mui/material'
+import { Button, Stack, Typography } from '@mui/material'
 import React from 'react'
 
 const ProductDiscountBanner = () => {
   return (
     <Stack sx={DiscountedProductStyle}>
-        hi
+      <Typography color={'#645151'} variant='h6'>We have new discount offers</Typography>
+      <Button variant='outlined'size='small'>Find out</Button>
     </Stack>
   )
 }
 
 const DiscountedProductStyle = {
-    backgroundColor: '#eff1f8',
+    backgroundColor: '#FFDB58',
     width: '100%',
-    height: '140px',
-    borderRadius: '8px'
+    borderRadius: '8px',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '2% 4%',
+    boxSizing: 'border-box'
 };
 
 export default ProductDiscountBanner

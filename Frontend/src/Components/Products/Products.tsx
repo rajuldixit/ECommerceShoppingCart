@@ -89,7 +89,7 @@ const ProductWrapperStyle = {
   boxSizing: 'border-box'
 };
 const ScrollableContainer = {
-  maxHeight: '450px',
+  maxHeight: '750px',
   overflowY: 'scroll',
   marginLeft: '30px',
 	float: 'left',

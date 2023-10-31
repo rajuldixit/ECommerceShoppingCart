@@ -25,7 +25,6 @@ const Home = () => {
 const ContainerWrapperStyle = {
   backgroundColor: '#eff1f8',
   width: '100%',
-  height: '100vh',
   padding: '1% 5%',
   boxSizing: 'border-box'
 };
