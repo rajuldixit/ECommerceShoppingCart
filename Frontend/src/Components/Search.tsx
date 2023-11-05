@@ -12,6 +12,9 @@ const SearchElement = styled('div')(({ theme }) => ({
     marginRight: theme.spacing(2),
     marginLeft: 0,
     width: '100%',
+    height: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
     [theme.breakpoints.up('sm')]: {
       marginLeft: theme.spacing(3),
       width: 'auto',
@@ -35,6 +38,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
         paddingLeft: `calc(1em + ${theme.spacing(4)})`,
         transition: theme.transitions.create('width'),
         width: '100%',
+        height: '100%',
         [theme.breakpoints.up('md')]: {
         width: '20ch',
         },
@@ -49,7 +53,7 @@ const Search = () => {
         </SearchIconWrapper>
         <StyledInputBase
             placeholder="Search…"
-            inputProps={{ 'aria-label': 'search' }}
+            inputProps={{  }}
         />
     </SearchElement>
   )

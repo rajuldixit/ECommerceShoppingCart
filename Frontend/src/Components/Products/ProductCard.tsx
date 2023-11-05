@@ -1,8 +1,10 @@
-import { Card, CardMedia, CardContent, Typography, CardActions, Button } from '@mui/material'
+import { Card, CardMedia, CardContent, Typography, CardActions, Button, Rating } from '@mui/material'
 import logo from '../../assets/images/iphoneCover.png'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useGetProductsQuery } from './ProductApi'
 
 const ProductCard = () => {
+ 
   return (
     <Card sx={CardStyle}>
       <CardMedia
@@ -11,12 +13,16 @@ const ProductCard = () => {
         title="green iguana"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="body2" >
           Iphone
         </Typography>
         <Typography variant="body2" color="text.secondary">
           250K INR
         </Typography>
+        <Rating
+            name="simple-controlled"
+            value={2}
+          />
       </CardContent>
     </Card>
   )
@@ -25,7 +31,7 @@ const ProductCard = () => {
 const CardStyle = {
     cursor: 'pointer',
     borderRadius: '16px',
-    'box-shadow': '-4px -3px 16px -9px rgba(0,0,0,0.1)'
+    boxShadow: '-5px 8px 8px 0px rgba(0,0,0,0.1)'
 }
 
 export default ProductCard

@@ -1,4 +1,4 @@
-import { Card, CardContent, Checkbox, FormControlLabel, Slider, Stack, Typography, styled } from '@mui/material'
+import { Card, CardContent, Checkbox, FormControlLabel, Paper, Rating, Slider, Stack, Typography, styled } from '@mui/material'
 import { useState } from 'react';
 
 const PrettoSlider = styled(Slider)({
@@ -40,6 +40,24 @@ const PrettoSlider = styled(Slider)({
   },
 });
 
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  boxShadow: 'none',
+  textAlign: 'start',
+  display: 'flex',
+  alignItems: 'center',
+  color: theme.palette.text.secondary,
+  height: '24px'
+}));
+
+const RatingRow = styled('div')(({ theme }) => ({
+  padding: theme.spacing(1 , 0),
+  textAlign: 'start',
+  display: 'flex',
+  alignItems: 'center',
+}));
+
 const Filter = () => {
   const [value, setValue] = useState<number[]>([0, 37]);
   const handleChange = (event: Event, newValue: number | number[]) => {
@@ -50,12 +68,16 @@ const Filter = () => {
       <Card sx={CardStyle}>
         <CardContent>
           <Stack flexDirection={'row'} justifyContent={'space-between'} alignItems={'center'}>
-          <Typography>Min</Typography>
-          <Typography>Max</Typography>
+            <Typography fontWeight={'bold'}>Min</Typography>
+            <Typography fontWeight={'bold'}>Max</Typography>
+          </Stack>
+          <Stack flexDirection={'row'} justifyContent={'space-between'} alignItems={'center'}>
+            <Typography>{value[0]}</Typography>
+            <Typography>{value[1]}</Typography>
           </Stack>
           <PrettoSlider
             valueLabelDisplay="auto"
-            aria-label="pretto slider"
+            // aria-label="pretto slider"
             defaultValue={20}
             value={value}
             onChange={handleChange}
@@ -64,10 +86,56 @@ const Filter = () => {
       </Card>
       <Card sx={CardStyle}>
         <CardContent>
-          <Typography>Products</Typography>
-          <FormControlLabel required control={<Checkbox />} label="Required" />
-          <FormControlLabel required control={<Checkbox />} label="Required" />
-          <FormControlLabel required control={<Checkbox />} label="Required" />
+          <Typography  fontWeight={'bold'}>Products</Typography>
+          <Stack spacing={2}>
+            <Item><Checkbox /><Typography variant="body2">Product 1</Typography></Item>
+            <Item><Checkbox /><Typography variant="body2">Product 1</Typography></Item>
+            <Item><Checkbox /><Typography variant="body2">Product 1</Typography></Item>
+          </Stack>
+        </CardContent>
+      </Card>
+      <Card sx={CardStyle}>
+        <CardContent>
+          <Typography  fontWeight={'bold'}>Brands</Typography>
+          <Stack spacing={2}>
+            <Item><Checkbox /><Typography variant="body2">Product 1</Typography></Item>
+            <Item><Checkbox /><Typography variant="body2">Product 1</Typography></Item>
+            <Item><Checkbox /><Typography variant="body2">Product 1</Typography></Item>
+          </Stack>
+        </CardContent>
+      </Card>
+      <Card sx={CardStyle}>
+        <CardContent>
+          <Typography  fontWeight={'bold'}>Customer Review</Typography>
+          <RatingRow>
+            <Rating
+              name="simple-controlled"
+              value={4}
+            />
+            <Typography>& up</Typography>
+          </RatingRow>
+          <RatingRow>
+            <Rating
+              name="simple-controlled"
+              value={3}
+            />
+            <Typography>& up</Typography>
+          </RatingRow>
+          <RatingRow>
+            <Rating
+              name="simple-controlled"
+              value={2}
+            />
+            <Typography>& up</Typography>
+          </RatingRow>
+          <RatingRow>
+            <Rating
+              name="simple-controlled"
+              value={1}
+            />
+            <Typography>& up</Typography>
+          </RatingRow>
+
         </CardContent>
       </Card>
     </Stack>
