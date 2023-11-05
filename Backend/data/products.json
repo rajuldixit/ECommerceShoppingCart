@@ -1,0 +1,149 @@
+{
+  "products" : {
+    "mobile": [
+      {
+        "id": 1,
+        "name": "iPhone 14",
+        "brand": "iPhone",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 2,
+        "name": "iPhone 14 pro",
+        "brand": "iPhone",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 3,
+        "name": "iPhone 14 pro max",
+        "brand": "iPhone",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 4,
+        "name": "iPhone 15",
+        "brand": "iPhone",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 5,
+        "name": "iPhone 15 pro",
+        "brand": "iPhone",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 6,
+        "name": "iPhone 15 pro max",
+        "brand": "iPhone",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 7,
+        "name": "iPhone 13",
+        "brand": "iPhone",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 8,
+        "name": "iPhone 12",
+        "brand": "iPhone",
+        "price": "100000",
+        "currency": "INR"
+      },{
+        "id": 9,
+        "name": "iPhone XR",
+        "brand": "iPhone",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 10,
+        "name": "iPhone 15 pro",
+        "brand": "iPhone",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 11,
+        "name": "iPhone 14 pro max",
+        "brand": "iPhone",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 12,
+        "name": "iPhone 14 pro",
+        "brand": "iPhone",
+        "price": "100000",
+        "currency": "INR"
+      } 
+    ],
+    "laptop": [
+      {
+        "id": 1,
+        "name": "MacBook pro",
+        "brand": "mac",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 2,
+        "name": "MacBook",
+        "brand": "mac",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 3,
+        "name": "MacBook pro",
+        "brand": "mac",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 4,
+        "name": "MacBook pro",
+        "brand": "mac",
+        "price": "100000",
+        "currency": "INR"
+      }
+    ],
+    "tablet": [
+      {
+        "id": 1,
+        "name": "Ipad Mini",
+        "brand": "mac",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 2,
+        "name": "Ipad Air",
+        "brand": "mac",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 3,
+        "name": "Ipad Air",
+        "brand": "mac",
+        "price": "100000",
+        "currency": "INR"
+      },
+      {
+        "id": 4,
+        "name": "Ipad Mini",
+        "brand": "mac",
+        "price": "100000",
+        "currency": "INR"
+      }    
+    ]
+  }
+}
